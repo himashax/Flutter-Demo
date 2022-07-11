@@ -14,8 +14,6 @@ class Quiz extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print('hi');
-
     return Column(children: [
       //  Text(questions[_questionIndex]),
       // used question widget

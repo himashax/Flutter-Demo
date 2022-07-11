@@ -7,8 +7,9 @@ class Result extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+   
     return Center(
-      child: Text(resultScore as String),
+      child: Text(resultScore.toString()),
     );
   }
 }

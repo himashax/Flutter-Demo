@@ -20,28 +20,28 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'What\'s your favourite color?',
       'answer': [
-        {'text': 'Red', 'Score': 10},
-        {'text': 'Blue', 'Score': 20},
-        {'text': 'White', 'Score': 30},
-        {'text': 'Black', 'Score': 30}
+        {'text': 'Red', 'score': 10},
+        {'text': 'Blue', 'score': 20},
+        {'text': 'White', 'score': 30},
+        {'text': 'Black', 'score': 30}
       ]
     },
     {
       'questionText': 'What\'s your favourite animal?',
       'answer': [
-        {'text': 'Rabbit', 'Score': 10},
-        {'text': 'Bird', 'Score': 20},
-        {'text': 'Butterfly', 'Score': 30},
-        {'text': 'Cat', 'Score': 30}
+        {'text': 'Rabbit', 'score': 10},
+        {'text': 'Bird', 'score': 20},
+        {'text': 'Butterfly', 'score': 30},
+        {'text': 'Cat', 'score': 30}
       ]
     },
     {
       'questionText': 'What\'s your favourite Name?',
       'answer': [
-        {'text': 'Anne', 'Score': 10},
-        {'text': 'Jack', 'Score': 20},
-        {'text': 'John', 'Score': 30},
-        {'text': 'Anaya', 'Score': 30}
+        {'text': 'Anne', 'score': 10},
+        {'text': 'Jack', 'score': 20},
+        {'text': 'John', 'score': 30},
+        {'text': 'Anaya', 'score': 30}
       ]
     },
   ];
@@ -59,9 +59,11 @@ class _MyAppState extends State<MyApp> {
     print(_questionIndex);
   }
 
+
   // returns a widget
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
@@ -71,7 +73,7 @@ class _MyAppState extends State<MyApp> {
             ? Quiz(
                 questions: _questions,
                 questionIndex: _questionIndex,
-                answerQuestion: _answerQuestion)
+                answerQuestion:  _answerQuestion)
             : Result(_totalScore),
       ),
     );
